@@ -1,5 +1,6 @@
-# SmartStream
-Library for streaming IO with easy tabulation
-* The thread remembers the number of tabs: `io << tab << "test" << endl << "test2"`  
+### SmartStream
+Аналог std::cout. Основная фишка - запоминает введенные табы, и каждую новую строку начинает с нужного количества табов.
+Можно ввводить и выводить все в один и тот же поток.
+* `int x; io << tab << "test" << endl << "test2" >> x`  
       `    test`    
       `    test2`
